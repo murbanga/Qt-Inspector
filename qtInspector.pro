@@ -42,3 +42,5 @@ HEADERS += ExternalObjectProxy.h \
 OBJECTS_DIR = .tmpapp
 MOC_DIR = .tmpapp
 RCC_DIR = .tmpapp
+
+QMAKE_CXXFLAGS += -Werror

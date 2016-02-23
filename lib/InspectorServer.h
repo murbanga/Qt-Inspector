@@ -17,7 +17,7 @@ namespace service
 	class InspectorResponse;
 	class QtObject;
 	class QtObject_Property;
-};
+}
 
 /** Entry point for the QtInspector library */
 void LIB_QTI_EXPORT qtInspectorInit();

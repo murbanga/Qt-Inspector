@@ -32,7 +32,6 @@ void ExternalObjectProxy::setObjectName(const QString& objectName)
 
 void ExternalObjectProxy::addProperty(const Property& property)
 {
-	bool found = false;
 	QMutableListIterator<Property> iter(m_properties);
 	while (iter.hasNext())
 	{

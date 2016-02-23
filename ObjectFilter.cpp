@@ -1,6 +1,6 @@
 #include "ObjectFilter.h"
 
-#include <QtGui/QWidget>
+#include <QWidget>
 
 ObjectFilter::ObjectFilter(const QString& name)
 : m_name(name)
@@ -24,6 +24,7 @@ QWidgetFilter::QWidgetFilter()
 
 bool QWidgetFilter::accepts(ObjectProxy::Pointer object) const
 {
+    Q_UNUSED(object);
 	// to-do - re-implement me with support for inheritance tests
 	return false;
 }

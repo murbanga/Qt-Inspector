@@ -12,7 +12,8 @@
 bool PreloadInjector::startAndInject(const QString& program, const QStringList& args,
   const QString& libraryPath, const QString& entryPoint, int* pid)
 {
-	*pid = 0;
+    Q_UNUSED(entryPoint);
+    *pid = 0;
 
 	QProcess* process = new QProcess;
 	QObject::connect(process, SIGNAL(finished(int,QProcess::ExitStatus)), process, SLOT(deleteLater()));
